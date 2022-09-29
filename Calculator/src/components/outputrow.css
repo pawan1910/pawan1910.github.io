@@ -1,0 +1,20 @@
+@font-face {
+    font-family: "RobotoSlab";
+    src: url(./Roboto_Slab/RobotoSlab-VariableFont_wght.ttf);
+}
+.screen{
+    font-family: 'RobotoSlab',sans-serif;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 90%;
+    font-size: 3.5rem;
+    height: 30px;
+    border: none;
+    background-color: #25a8e0;
+    color: white;
+    text-align: right;
+    padding-right: 20px;
+    padding-top: 10px;
+    padding-bottom: 20px;
+}
