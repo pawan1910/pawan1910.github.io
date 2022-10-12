@@ -1,0 +1,71 @@
+.grid-container {
+    display: grid;
+    grid-template-columns: 10% 20% 22% 26% 22%;
+    /* margin-bottom: 10px; */
+}
+
+ .heading-container {
+    /* margin: 30px 0 30px 0; */
+    width: 100%;
+} 
+  
+.grid-item {
+    background-color: rgba(255, 255, 255, 0.8);
+    font-size: 1.15rem;
+    word-wrap: break-word;
+    /* padding-right: 10px; */
+}
+
+.name-heading, .vechileNo-heading {
+    font-size: 1rem;
+    font-weight: 600;
+    color: #1a1818;
+    text-transform: uppercase;
+}
+
+.delete-btn {
+    width: auto;
+    background: #fa9c9c;
+    color: #000;
+} 
+
+
+.grid-container heading-container {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    } 
+    
+ table {
+    margin-top: 20px;
+  border: 2px solid black;
+  border-collapse: collapse;
+    width: 100%;
+    }
+    
+    th {
+    border: 1px solid black;
+    border-collapse: collapse;
+    }
+    
+    td {
+    text-align: center;
+    border: 1px solid black;
+    border-collapse: collapse;
+    } 
+
+    /* table, th, td {
+        border: 1px solid black;
+        border-collapse: collapse;
+      } */
+
+      th, td {
+        padding-top: 10px;
+        padding-bottom: 20px;
+        padding-left: 30px;
+        padding-right: 40px;
+      }
+    
+    
