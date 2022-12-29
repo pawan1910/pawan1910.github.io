@@ -1,0 +1,85 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap');
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins',sans-serif;
+}
+
+body{
+    background: linear-gradient(135deg, #71b7e6, #9b59b6);
+}
+
+
+.input{
+    border: 1px solid #ccc;
+    width: 320px;
+    height: 45px;
+    padding: 8px;
+    background-color: rgba(248, 245, 245, 0.447);
+    /* margin: 10px 0px; */
+    border-radius: 5px;
+    box-shadow: 0 5px 10px rgba(0,0,0,0.15);
+}
+.input input:focus{
+    border-color: #9b59b6;
+}
+label{
+    font-size: larger;
+    font-weight: 500;
+}
+
+::placeholder{
+    color: rgb(11, 13, 14);
+    
+}
+#valueList{
+    display: none;
+}
+
+#uploadPreview {
+    margin-left: 150%;
+    margin-top: -80px;
+    width: 100px;
+    height: 100px;
+    display: none;
+    border: 1px solid #22f022;
+}
+
+.file{
+    margin-left: -150px;
+}
+
+@media only screen and (max-width: 1200px) {
+    .main {
+      display: flex;
+      flex-direction: column;
+    }
+    #img-preview{
+        margin-left: 0px;
+    }
+  }
+
+  /* @media only screen and (min-width:900px){
+    .body{
+        background: white;
+    }
+    
+  } */
+
+  @media only screen and (max-width:600px) {
+    .body{
+        background: white;
+    }
+    
+  }
+
+  @media only screen and (min-width:1200px) {
+    .body{
+        display: flex;
+        flex-basis: 50%;
+    }
+    
+  }
+
+  

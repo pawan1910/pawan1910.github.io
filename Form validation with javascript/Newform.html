@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="./style.css" rel="stylesheet" />
+    <title>Form</title>
+  </head>
+  <body class="flex flex-wrap justify-center body md:bg-white"  >
+    
+
+    <div class="flex flex-wrap p-4 bg-white w-8/12 rounded-md">
+      <form class="form p-8" id="form" onsubmit="return(submit_form())">
+        <h1 class="font-bold text-3xl flex justify-center">Registration Form</h1>
+        <div class="my-6 flex flex-wrap justify-around md:flex-1 main">
+          <div class="py-4 flex-initial w-64">
+            <label>Firstname</label><br />
+            <input
+              class="input"
+              type="text"
+              placeholder="Enter your Firstname"
+              id="fname"
+            /><br />
+            <span id="first" class="text-[#dc3545] fs-6"></span>
+          </div>
+
+          <div class="py-4 flex-initial w-64">
+            <label>Lastname</label><br />
+            <input
+              class="input"
+              type="text"
+              placeholder="Enter your lastname"
+              id="lname"
+            /><br />
+            <span id="last" class="text-[#dc3545] fs-6"></span>
+          </div>
+
+          <div class="py-4 flex-initial w-64">
+            <label>Email</label><br />
+            <input
+              class="input"
+              type="email"
+              placeholder="Enter your Email id"
+              id="email"
+            /><br />
+            <span id="mail" class="text-[#dc3545] fs-6"></span>
+          </div>
+
+          <div class="py-4 flex-initial w-64">
+            <label>Date of Birth</label><br />
+            <input
+              class="input"
+              type="date"
+              placeholder="dd-mm-yyyy"
+              min="15-08-1947"
+              max="2022-12-16"
+              id="date"
+            /><br />
+            <span id="dob" class="text-[#dc3545] fs-6"></span>
+          </div>
+
+          <div class="py-4 flex-initial w-64">
+            <label>Password</label><br />
+            <input
+              class="input"
+              type="password"
+              placeholder="Enter your Password"
+              id="NewPassword"
+              pattern="(?=.*[a-z])(?=.*[A-Z]).{8,}"
+              title="Must contain at least one uppercase and lowercase letter, and at least 8 or more characters"
+            /><br />
+            <span id="num" class="text-[#dc3545] fs-6"></span>
+          </div>
+
+          <div class="py-4 flex-initial w-64">
+            <label>Confirm Password</label><br />
+            <input
+              class="input"
+              type="password"
+              id="RePassword"
+              placeholder="Once again password"
+            /><br />
+            <span id="message" class="text-[#dc3545] fs-6"> </span><br />
+          </div>
+
+          <div class="py-4 flex-initial w-64">
+            <label> Gender</label><br />
+            <input
+              class="w-4"
+              type="radio"
+              id="male"
+              name="gender"
+              value="male"
+              onchange="gender1()"
+            />
+            Male<br />
+            <input
+              class="w-4"
+              type="radio"
+              id="female"
+              name="gender"
+              value="female"
+              onchange="gender2()"
+            />
+            Female<br />
+            <input
+              class="w-4"
+              type="radio"
+              id="others"
+              name="gender"
+              value="Other"
+              onchange="gender3()"
+            />
+            Other<br />
+            <span id="radio" class="text-[#dc3545] fs-6"> </span><br />
+          </div>
+
+
+          <div class="py-4 flex-initial w-64">
+            <label>Skills</label><br>
+            <input type="checkbox" value="HTML" class="checkbox" id="HTML">HTML<br>
+            <input type="checkbox" value="CSS" class="checkbox" id="CSS">CSS<br>
+            <input type="checkbox" value="JavaScript" class="checkbox" id="javascript">JavaScript<br>
+            <input type="checkbox" value="React" class="checkbox" id="React">React<br>
+            <span id="check" class="text-[#dc3545] fs-6"> </span><br />
+            
+            <span class="print-values"></span>
+            <span id="valueList"></span>
+          </div>
+
+          <div class="py-4 mr-48  file" id="img-preview">
+            <label for="choose-file">Upload Photo</label><br />
+            <input
+              class="input"
+              type="file"
+              id="uploadImage"
+              name="myPhoto"
+              accept="image/*"
+              onchange="PreviewImage();"
+            /><br />
+            <span id="img" class="text-[#dc3545] fs-6"> </span><br />
+            <img id="uploadPreview" />
+          </div>
+
+          <div class="py-4 mr-10">
+            <button
+              class="border-emerald-700 bg-gradient-to-r from-green-400 to-blue-500 hover:from-pink-500 hover:to-yellow-500 m-4 p-2 text-white rounded-md font-semibold w-80"
+              type="submit"
+              onclick="submit_form()"
+            >
+              Register
+            </button>
+          </div>
+        </div>
+      </form>
+    </div>
+
+    <script src="./script.js"></script>
+  </body>
+</html>
