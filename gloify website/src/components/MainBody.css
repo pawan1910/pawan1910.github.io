@@ -1,0 +1,116 @@
+*{
+    margin: 0px;
+    padding: 1px;
+    /* background-color: #f7f7f7; */
+}
+
+.header{
+    display: flex;
+    align-items: center;
+    color: #565454;
+}
+
+.inpt{
+    height: 65px;
+}
+.inpt input{
+    width: 20rem;
+    margin-left: 35px;
+}
+
+.inpt input::placeholder{
+    padding-left: 20px;
+}
+
+.icon1{
+    position: absolute;
+    z-index: 10;
+    margin-left: 40px;
+    margin-top: 8px;
+}
+
+.btns{
+    background-color: rgb(28 180 133);
+    color: white;
+    width: 110px;
+    margin: 5px;
+    border: none;
+    height: 30px;
+}
+/* .main-head{
+    margin-right: 60px;
+} */
+
+.home{
+    margin-top: 0px;
+    margin-inline: 20px;
+}
+
+.new{
+    font-size: 10px;
+}
+
+.new_btn{
+    width: 220px;
+}
+
+.card{
+    padding: 8px;
+     color: #565454;
+    box-shadow: 1px 1px 1px 3px #dad3d3;
+}
+
+.select{
+    width: 25%;
+    height: 30px;
+    margin-left: 80px;
+}
+
+.last{
+    margin-left: auto;
+}
+
+.tbhead{
+    background-color: #f0f0f0;
+    height: 45px;
+}
+.row1{
+    background: #f8d7da;
+    font-weight: 500;
+}
+
+.img{
+    width: 50px;
+    border-radius: 50%;
+}
+
+.row2{
+    background: #d1e7dd;
+    font-weight: 500;
+}
+
+.email{
+    font-size: 12px;
+}
+
+@media screen and (max-width: 900px) {
+    .inpt{
+        margin-bottom: 20px;
+    height: 150px;
+    display: flex;
+    flex-direction: column;
+    }
+}
+
+@media screen and (max-width:1100px) {
+    .inpt input{
+        width: auto;
+    }
+}
+
+@media screen and (max-width:500px) {
+    .search{
+        display: none;
+    }
+    
+}
